@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of AI and Machine Learning](/images/welcome.png){: align-right width="300px"}
+<div style="float: right; margin: 10px;">
+    <img src="/images/ai_machine_learning.png" alt="Illustration of AI and Machine Learning" width="300px">
+</div>
 
 ## 🌟 About Me
 
@@ -24,20 +26,17 @@ I am a data scientist with a deep passion for research in computer vision and so
 
 ## 🧑‍🔬 Research Experience
 
-- **K. J. Somaiya College of Engineering, Mumbai**  
-  *Research Intern* under Dr. Jagannath Nirmal
-  - Developed a multi-resolution analysis framework to detect Crown-of-Thorns Starfish in coral reef environments.
-  - Published in the *Journal of Intelligent Marine Technology and Systems (IMTS)*.
+- [**K. J. Somaiya College of Engineering, Mumbai**](https://www.somaiya.edu/en/view-member/160111/)  
+  *Research Intern* under Dr. Jagannath Nirmal  
+  Developed a multi-resolution analysis framework using computer vision techniques to detect Crown-of-Thorns Starfish in coral reef environments, resulting in significant improvements in environmental monitoring and a publication in the *Journal of Intelligent Marine Technology and Systems (IMTS)*.
 
-- **Ernst & Young (EY)**  
-  *Software Development Intern*
-  - Integrated machine learning models into risk management systems.
-  - Developed AI-driven solutions for natural language processing to enhance data analytics for banking compliance.
+- [**Ernst & Young (EY)**](https://www.ey.com/en_in/services/risk)  
+  *Software Development Intern*  
+  Integrated machine learning models into risk management systems and developed AI-driven solutions for natural language processing tasks, enhancing data analytics for banking compliance.
 
-- **Indian Statistical Institute, Kolkata**  
-  *Research Assistant* under Dr. Pradipta Maji
-  - Focused on applying computer vision techniques in biomedical imaging.
-  - Improved cancer detection accuracy through advanced color normalization methods.
+- [**Indian Statistical Institute, Kolkata**](https://www.isical.ac.in/~bibl/)  
+  *Research Assistant* under Dr. Pradipta Maji  
+  Focused on applying computer vision techniques in biomedical imaging to improve cancer detection accuracy through advanced color normalization methods.
 
 ## 🌱 Personal Interests
 
@@ -46,4 +45,3 @@ I am a data scientist with a deep passion for research in computer vision and so
 
 - **Nature Lover** 🌿  
   I enjoy planting new plants in my surroundings every weekend, contributing to a greener environment.
-
