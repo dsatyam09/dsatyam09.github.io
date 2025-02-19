@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-{% include image.html url="/images/profile.jpg" caption="A sassy caption here" width=300 align="right" %}
+{% include image.html url="/images/mypic.jpg" caption="A sassy caption here" width=300 align="right" %}
 
-Describe yourself here. Dummy text ahead.
+Hi 🙌.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am a Master's student in Data Science at [University of California, San Diago](https://www.ri.cmu.edu/). My research interests are at the interface of 3D Computer Vision and AI, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes. I am also exploring algorithms that can learn to perceive the world around them, and use this understanding to interact with the world.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Previously, I spent a year as a researcher at Jio Institute, collaborating with [Dr. Sudipto Roy](https://sites.google.com/view/a2idsia-at-xyx/sudipta-roy) on self-supervised learning for ultrasound (USG) cyst localization. My inclination toward research developed during my undergraduate internships at Indian Statistical Institute, Kolkata, under the guidance of [Dr. Pradipta Maji](https://www.isical.ac.in/~pmaji/), and at KJ Somaiya College of Engineering, where I worked with [Dr. Jagannath Nirmal](https://www.somaiya.edu/en/view-member/160111/) on marine environmental monitoring using computer vision.
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+I am always eager to explore how AI can be made more interpretable, adaptable, and socially responsible.
+
+<h2>Updates</h2>
+<div class="updates" style="height: 10em; overflow-y: scroll;">
+<ul>
+<li><i>Month. Year</i> - Add updates in chronological order, such as paper acceptance, talk invitations, internships, etc.</li>
+<li><i>Month. Year</i> - This list is scrollable, with most recent updates at the top.</li>
+</ul>
+</div>

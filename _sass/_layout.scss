@@ -1,7 +1,7 @@
 /**
  * Site footer
  */
-.site-footer {
+ .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -66,39 +66,59 @@
     }
 }
 
-
-
 /**
- * Page content
+ * Page content (applies to all pages)
  */
 .page-content {
-    padding: $spacing-unit 0;
+    max-width: 1200px; /* Expanded width */
+    margin: 0 auto;
+    padding: $spacing-unit;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.page-heading {
-    font-size: 20px;
+/* General container for all page layouts */
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.post-list {
-    margin-left: 0;
+/* Left-aligned text content */
+.page-text {
+    flex: 1;
+    min-width: 500px;
+}
+
+/* Image sections */
+.page-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/**
+ * Updates Section (for dynamic content areas)
+ */
+.updates {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 15px;
+    border-left: 4px solid $brand-color;
+    background-color: lighten($grey-color-light, 10%);
+    border-radius: 5px;
+}
+
+.updates ul {
     list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+    padding: 0;
 }
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+.updates li {
+    margin-bottom: 10px;
+    font-size: $base-font-size;
 }
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
 
 /**
  * Posts
@@ -108,80 +128,65 @@
 }
 
 h1 /* .post-title */ {
-/*    font-size: 42px; */
     margin-top: 10px;
     letter-spacing: -1px;
     line-height: 1;
-		font-family: 'Titillium Web', sans-serif;
-		color: $blue-color-dark;
-
-    @include media-query($on-laptop) {
-/*        font-size: 36px; */
-    }
+    font-family: 'Titillium Web', sans-serif;
+    color: $blue-color-dark;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Titillium Web', sans-serif;
-	    font-weight: 500;
-/*        font-size: 32px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 28px; */
-        }
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
     }
 
     h3 {
-		font-style: italic;
+        font-style: italic;
         font-weight: 500;
-/*        font-size: 26px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 22px; */
-        }
     }
 
-    h4 {
-/*       font-size: 20px; */
-
-        @include media-query($on-laptop) {
-/*            font-size: 18px; */
-        }
-    }
+    h4 {}
 }
 
-.footnotes ol li {list-style-type:decimal;}
-.footnotes ol {font-size:.85em; color:#666666;}	
-	
+/* Footnotes */
+.footnotes ol li {
+    list-style-type: decimal;
+}
+
+.footnotes ol {
+    font-size: .85em;
+    color: #666666;
+}
+
 html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
+/* Listings */
 ul.listing {
-	list-style-type: none;
-	margin-left: 0px;
+    list-style-type: none;
+    margin-left: 0px;
 }
 
 ul.listing li.listing-seperator {
-	padding-top: 15px;
-	font-weight: bold;
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.17em;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.17em;
 }
 
 ul.listing li.listing-item time {
-
-	color: #333;
-	font-weight: 500;
-	text-transform: uppercase;
-	padding-right: 10px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 10px;
 }
 
 ul.listing li.listing-item a {
-	color: $blue-color-dark;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
+    color: $blue-color-dark;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
 }
-
