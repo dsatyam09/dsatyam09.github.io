@@ -1,7 +1,9 @@
 ---
 title: "Experience"
 layout: default
+permalink: /experience/
 ---
+
 
 # Professional Experience
 
