@@ -69,13 +69,10 @@
 /**
  * Page content (applies to all pages)
  */
-.page-content {
-    max-width: 1200px; /* Expanded width */
-    margin: 0 auto;
-    padding: $spacing-unit;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+ .page-content {
+    max-width: 100%; /* Allow it to take full width */
+    width: 100%;
+    padding: 0; /* Remove any extra padding that might be limiting space */
 }
 
 /* General container for all page layouts */

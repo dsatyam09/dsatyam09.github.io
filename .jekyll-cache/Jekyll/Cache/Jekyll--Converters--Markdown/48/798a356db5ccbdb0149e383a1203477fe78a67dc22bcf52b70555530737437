@@ -1,9 +1,4 @@
----
-title: "Experience"
-layout: default
----
-
-# Professional Experience
+I"�<h1 id="professional-experience">Professional Experience</h1>
 
 <style>
   .experience-container {
@@ -57,13 +52,13 @@ layout: default
   }
 </style>
 
-## Research & Industry Experience
+<h2 id="research--industry-experience">Research &amp; Industry Experience</h2>
 
----
+<hr />
 
-### **Jio Institute, Mumbai**  
+<h3 id="jio-institute-mumbai"><strong>Jio Institute, Mumbai</strong></h3>
 <div class="experience-container">
-  <img src="{{ site.baseurl }}/images/Jio_Institue.png" alt="Jio Institute Logo">
+  <img src="/dsatyam09/images/Jio_Institue.png" alt="Jio Institute Logo" />
   <div class="experience-text">
     <p class="experience-title">Research Assistant</p>
     <p class="experience-subtitle">Mentor: Dr. Sudipta Roy</p>
@@ -77,11 +72,11 @@ layout: default
   </div>
 </div>
 
----
+<hr />
 
-### **K. J. Somaiya College of Engineering, Mumbai**  
+<h3 id="k-j-somaiya-college-of-engineering-mumbai"><strong>K. J. Somaiya College of Engineering, Mumbai</strong></h3>
 <div class="experience-container">
-  <img src="{{ site.baseurl }}/images/tlogo.jpg" alt="KJSCE Logo">
+  <img src="/dsatyam09/images/tlogo.jpg" alt="KJSCE Logo" />
   <div class="experience-text">
     <p class="experience-title">Research Intern</p>
     <p class="experience-subtitle">Mentor: Dr. Jagannath Nirmal</p>
@@ -93,11 +88,11 @@ layout: default
   </div>
 </div>
 
----
+<hr />
 
-### **Ernst & Young (EY)**  
+<h3 id="ernst--young-ey"><strong>Ernst &amp; Young (EY)</strong></h3>
 <div class="experience-container">
-  <img src="{{ site.baseurl }}/images/ernst_young-logo_brandlogos.net_gwddw.png" alt="EY Logo">
+  <img src="/dsatyam09/images/ernst_young-logo_brandlogos.net_gwddw.png" alt="EY Logo" />
   <div class="experience-text">
     <p class="experience-title">Software Development Intern</p>
     <p class="experience-subtitle">Manager: Ms. Nidhi Kumari</p>
@@ -109,19 +104,20 @@ layout: default
   </div>
 </div>
 
----
+<hr />
 
-### **Indian Statistical Institute, Kolkata**  
+<h3 id="indian-statistical-institute-kolkata"><strong>Indian Statistical Institute, Kolkata</strong></h3>
 <div class="experience-container">
-  <img src="{{ site.baseurl }}/images/images.png" alt="ISI Kolkata Logo">
+  <img src="/dsatyam09/images/images.png" alt="ISI Kolkata Logo" />
   <div class="experience-text">
     <p class="experience-title">Research Intern (Biomedical Imaging and Bioinformatics Lab)</p>
     <p class="experience-subtitle">Mentor: Dr. Pradipta Maji</p>
     <p class="experience-duration">May 2022 - July 2022</p>
     <ul class="experience-list">
-      <li>Developed advanced color normalization techniques for H&E stained images, utilizing RGB, HSI, and Lαβ models.</li>
+      <li>Developed advanced color normalization techniques for H&amp;E stained images, utilizing RGB, HSI, and Lαβ models.</li>
       <li>Incorporated Gaussian Mixture Models to reduce noise and applied non-linear normalization to enhance image quality.</li>
       <li>Utilized the Akaike Information Criterion (AIC) to confirm HSI as the optimal color channel for enhancing breast cancer cell detection accuracy.</li>
     </ul>
   </div>
 </div>
+:ET

@@ -1,9 +1,4 @@
----
-title: "CV"
-layout: default
----
-
-# My CV
+I"¨<h1 id="my-cv">My CV</h1>
 
 <style>
   .cv-container {
@@ -42,10 +37,9 @@ layout: default
 </style>
 
 <div class="cv-container">
-  <iframe 
-    class="cv-frame" 
-    src="{{ site.baseurl }}/cv/Satyam_Dubey_CV_MSDS.pdf">
+  <iframe class="cv-frame" src="/dsatyam09/cv/Satyam_Dubey_CV_MSDS.pdf">
   </iframe>
 
-  <p>If the PDF does not load, you can <a class="download-link" href="{{ site.baseurl }}/cv/Satyam_Dubey.pdf" target="_blank">download it here</a>.</p>
+  <p>If the PDF does not load, you can <a class="download-link" href="/dsatyam09/cv/Satyam_Dubey.pdf" target="_blank">download it here</a>.</p>
 </div>
+:ET
