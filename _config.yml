@@ -8,7 +8,7 @@ description: >
   Welcome to my personal site! I am passionate about technology, research, and innovation. 
   Here, you'll find my projects, blog posts, and academic work.
 
-baseurl: "/dsatyam09"  # The subpath of your site, e.g., /blog/
+baseurl: ""  # The subpath of your site, e.g., /blog/
 url: "https://dsatyam09.github.io"  # The base hostname & protocol for your site
 
 # Social media links
