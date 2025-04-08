@@ -12,9 +12,9 @@ This is a personal academic portfolio built with [Jekyll](https://jekyllrb.com/)
 
 ## Requirements
 
-Before you can run the project locally, make sure you have the following installed:
+Before you can run the project locally, make sure you have the following installed :
 
-- **Ruby** (Version 3.x.x or higher)
+- **Ruby** (Version 3.x.x or higher)         
 - **RubyGems**
 - **Bundler** (Run `gem install bundler` to install it)
 - **Jekyll** (Can be installed through the Gemfile)
