@@ -21,7 +21,7 @@ Before you can run the project locally, make sure you have the following install
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+### 1. Clone the  Repository
 
 Clone the repository to your local machine using Git:
 
