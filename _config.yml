@@ -1,0 +1,43 @@
+# Site settings
+title: Satyam Dubey
+author: Satyam Dubey
+general_email: dsatyam5302@gmail.com
+academic_email: satyam.dubey@jioinstitute.edu.in
+
+description: >-
+  Data Science Researcher & AI Enthusiast
+
+baseurl: ""  # The subpath of your site, e.g., /blog/
+url: ""  # The base hostname & protocol for your site, e.g. http://example.com
+
+# Social media links
+twitter_username: dsatyam09
+twitter_url: "https://twitter.com/dsatyam09"
+github_username: dsatyam09
+linkedin_username: dsatyam09  # Removed trailing slash for consistency
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Other options
+permalink: /:title/  # Ensures pages use their filenames as permalinks
+
+# Default settings for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
