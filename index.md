@@ -4,7 +4,7 @@ title: About
 permalink: /
 ---
 
-{% include image.html url="/images/Satyam.jpeg" caption="Data Science Researcher & AI Enthusiast" width=300 align="right" %}
+{% include image.html url="/images/Satyam.jpeg" caption="Satyam Dubey" width=300 align="right" %}
 
 Hi 🙌.
 

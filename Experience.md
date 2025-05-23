@@ -24,7 +24,8 @@ permalink: /experience/
   }
   .experience-container img {
       width: 120px;
-      height: auto;
+      height: 120px;
+      object-fit: cover;
       border-radius: 10px;
       margin-right: 25px;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
