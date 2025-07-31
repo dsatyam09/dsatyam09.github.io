@@ -100,11 +100,11 @@
     margin-top: 3rem; /* Increased spacing from navbar */
 }
 
-/* Make content span wider */
+/* Make content span wider with increased margins */
 .wrapper {
     max-width: 1400px; /* Increased from default */
     margin: 0 auto;
-    padding: 0 2rem; /* Increased padding */
+    padding: 0 3rem; /* Increased from 2rem to 3rem (0.5X increase) */
 }
 
 /**

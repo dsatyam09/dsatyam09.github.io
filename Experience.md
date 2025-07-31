@@ -70,10 +70,9 @@ permalink: /experience/
     <p class="experience-subtitle">Mentor: Dr. Sudipta Roy</p>
     <p class="experience-duration">July 2024 - Present</p>
     <ul class="experience-list">
-      <li>Developing a self-supervised model for early detection of Non-Alcoholic Fatty Liver Disease from ultrasound scans.</li>
-      <li>Utilizing ResNet-18 bottleneck, Eco-Texture features, and spatial attention mechanisms for fat localization.</li>
-      <li>Using federated learning to ensure privacy and Explainability techniques to enhance model insights.</li>
-      <li>Collaborating with radiologists to refine the model with weekly feedback from live deployment in government hospitals.</li>
+      <li>Created a self-supervised learning pipeline using spectral features and attention for USG representation learning.</li>
+      <li>Achieved 5–7% improvement in diagnostic accuracy across multi-organ datasets by enhancing feature generalization.</li>
+      <li>Collaborated with clinicians at 3 government hospitals to curate and analyze over 5,000 patient cases, identifying dietary patterns related to fatty liver disease.</li>
     </ul>
   </div>
 </div>
@@ -88,7 +87,7 @@ permalink: /experience/
     <p class="experience-subtitle">Mentor: Dr. Jagannath Nirmal</p>
     <p class="experience-duration">Aug 2023 - June 2024</p>
     <ul class="experience-list">
-      <li>Developed a wavelet-based multi-resolution analysis framework for crown-of-thorns starfish (COTs) detection, achieving 95% classification accuracy.</li>
+      <li>Developed a wavelet-based multi-resolution analysis framework for crown-of-thorns starfish (COTs) detection, achieving 95% classification accuracy, surpassing prior methods by 2.5%.</li>
       <li>Published findings in <i>IMTS Springer Journal</i>, showcasing advancements in integrating GLCM-based texture analysis with the second-order statistical feature extraction.</li>
     </ul>
   </div>
@@ -104,8 +103,9 @@ permalink: /experience/
     <p class="experience-subtitle">Manager: Ms. Nidhi Kumari</p>
     <p class="experience-duration">June 2023 - Aug 2023</p>
     <ul class="experience-list">
-      <li>Built the backend for a Speech-to-Text POC, incorporating speaker diarization on Google Cloud Platform to enable accurate agent profiling.</li>
-      <li>Applied Zero-Shot learning to enhance Risk Control Matrix (RCM) management, comparing models for better compliance and banking insights.</li>
+      <li>Developed the backend for a speech-to-text pipeline with speaker diarization on GCP, enabling agent scoring through voice-based profiling with 85%+ segmentation accuracy.</li>
+      <li>Crafted a tone analysis module using speech embeddings and linguistic markers to detect misselling in 1,200+ calls.</li>
+      <li>Enhanced RCM (Risk Control Matrix) using a fine-tuned RoBERTa model, reducing compliance review time by 30% via automated risk signal extraction.</li>
     </ul>
   </div>
 </div>

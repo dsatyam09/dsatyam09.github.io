@@ -97,10 +97,18 @@
     color: white;
     transform: translateY(-2px);
   }
+}
+
+.contact-icon-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
   
-  svg {
-    width: 24px; /* Increased from 20px */
-    height: 24px; /* Increased from 20px */
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -180,8 +188,8 @@
 }
 
 .research-interests ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column; /* Changed from grid to column */
   gap: 0.5rem;
 }
 
