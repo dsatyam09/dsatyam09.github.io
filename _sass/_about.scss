@@ -1,0 +1,235 @@
+/**
+ * About page styles
+ */
+
+.about-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.profile-section {
+  flex: 0 0 300px;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    flex: none;
+  }
+}
+
+.profile-photo {
+  margin-bottom: 1.5rem;
+}
+
+.circular-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.profile-institution {
+  font-size: 1.1rem;
+  color: $brand-color;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: $brand-color;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $brand-color;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.content-section {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.content-section a {
+  color: $brand-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 2rem 0 1rem 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.content-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333333;
+  
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+    font-weight: bold;
+  }
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.education-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.education-text {
+  flex: 1;
+}
+
+.education-degree {
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.25rem;
+}
+
+.education-institution {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+.updates {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid $brand-color;
+}
+
+.updates h3 {
+  margin-bottom: 1rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+.updates ul {
+  margin: 0;
+  padding: 0;
+}
+
+.updates li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    background-color: $brand-color;
+    border-radius: 50%;
+  }
+}
+
+.updates strong {
+  color: $brand-color;
+  font-weight: 600;
+}
+
+.updates i {
+  color: #666666;
+  font-style: italic;
+} 

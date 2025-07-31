@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /
 ---
 
-{% include image.html url="/images/Satyam.jpeg" caption="Satyam Dubey" width=300 align="right" %}
-
-Hi 🙌.
+# Hi, I'm Satyam! 🙌
 
 I am a Master's student in Data Science at [Indiana University, Bloomington](https://www.ri.cmu.edu/). My research interests are at the interface of 3D Computer Vision and AI, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes. I am also exploring algorithms that can learn to perceive the world around them and use this understanding to interact with the world.
 
@@ -14,10 +12,32 @@ Previously, I spent a year as a researcher at Jio Institute, collaborating with 
 
 I am always eager to explore how AI can be made more interpretable, adaptable, and socially responsible.
 
-<div style="margin-top: 2em;"></div>
+You can find my full CV [here](/cv/) and further information on my projects.
 
-## Updates  
-<div class="updates" style="height: 10em; overflow-y: scroll; margin-top: 1em;">
+## Education
+
+<div class="education-item">
+  <div class="education-logo">
+    <span style="font-size: 20px; color: #007bff;">🎓</span>
+  </div>
+  <div class="education-text">
+    <div class="education-degree">Master of Science in Data Science, expected in 2026</div>
+    <div class="education-institution">Indiana University, Bloomington, USA</div>
+  </div>
+</div>
+
+## Research Interests
+
+- **3D Computer Vision and AI**
+- **Neural Scene Representations**
+- **3D Scene Understanding**
+- **Deep Learning for Graphics**
+- **Self-supervised Learning**
+- **Computer Vision Applications**
+
+## Updates
+
+<div class="updates">
 <ul>
 <li><strong>Aug 2025</strong> – <i>Joined MSDS program at Indiana University Bloomington</i></li>
 <li><strong>Jul 2024 – June 2025</strong> – <i>Research Assistant at Jio Institute, Navi Mumbai</i></li>
