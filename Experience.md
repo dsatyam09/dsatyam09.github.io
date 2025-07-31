@@ -4,7 +4,6 @@ layout: default
 permalink: /experience/
 ---
 
-
 # Professional Experience
 
 <style>
@@ -18,6 +17,7 @@ permalink: /experience/
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 40px;
       transition: transform 0.2s ease-in-out;
+      width: 100%; /* Make it span full width */
   }
   .experience-container:hover {
       transform: scale(1.02);
@@ -60,15 +60,13 @@ permalink: /experience/
   }
 </style>
 
-## Research & Industry Experience
-
 ---
 
 ### **Jio Institute, Mumbai**  
 <div class="experience-container">
   <img src="{{ site.baseurl }}/images/Jio_Institue.png" alt="Jio Institute Logo">
   <div class="experience-text">
-    <p class="experience-title">Research Assistant</p>
+    <p class="experience-title">Data Scientist</p>
     <p class="experience-subtitle">Mentor: Dr. Sudipta Roy</p>
     <p class="experience-duration">July 2024 - Present</p>
     <ul class="experience-list">

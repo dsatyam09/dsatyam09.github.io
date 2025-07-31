@@ -6,19 +6,27 @@
   display: flex;
   gap: 3rem;
   margin-top: 2rem;
+  height: calc(100vh - 120px); /* Make it fit in viewport */
+  overflow: hidden; /* Prevent scrolling */
   
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
+    height: auto;
+    overflow: visible;
   }
 }
 
 .profile-section {
-  flex: 0 0 300px;
+  flex: 0 0 350px;
   text-align: center;
+  padding-left: 2rem; /* Move photo more to the left */
+  padding-top: 3rem; /* Move photo down a bit */
   
   @media (max-width: 768px) {
     flex: none;
+    padding-left: 0;
+    padding-top: 1rem;
   }
 }
 
@@ -27,8 +35,8 @@
 }
 
 .circular-photo {
-  width: 200px;
-  height: 200px;
+  width: 250px; /* Increased from 200px */
+  height: 250px; /* Increased from 200px */
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #f0f0f0;
@@ -69,7 +77,7 @@
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem; /* Increased gap */
   margin-top: 1rem;
 }
 
@@ -77,8 +85,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px; /* Increased from 40px */
+  height: 50px; /* Increased from 40px */
   color: $brand-color;
   text-decoration: none;
   border-radius: 50%;
@@ -91,18 +99,22 @@
   }
   
   svg {
-    width: 20px;
-    height: 20px;
+    width: 24px; /* Increased from 20px */
+    height: 24px; /* Increased from 20px */
   }
 }
 
 .content-section {
   flex: 1;
-  max-width: 600px;
+  max-width: none; /* Remove max-width constraint */
+  padding-right: 2rem; /* Add right padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content vertically */
 }
 
 .content-section h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reduced from 2.5rem */
   font-weight: 600;
   color: #333333;
   margin-bottom: 1.5rem;
@@ -110,10 +122,10 @@
 }
 
 .content-section p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem; /* Reduced from 1.1rem */
+  line-height: 1.6; /* Reduced from 1.7 */
   color: #333333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem; /* Reduced from 1.5rem */
 }
 
 .content-section a {
@@ -126,10 +138,10 @@
 }
 
 .content-section h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Reduced from 1.5rem */
   font-weight: 600;
   color: #333333;
-  margin: 2rem 0 1rem 0;
+  margin: 1.5rem 0 1rem 0; /* Reduced margins */
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -142,8 +154,8 @@
 .content-section li {
   position: relative;
   padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.4rem; /* Reduced from 0.5rem */
+  font-size: 1rem; /* Reduced from 1.1rem */
   color: #333333;
   
   &:before {
@@ -155,81 +167,27 @@
   }
 }
 
-.education-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
+/* Remove education section styles as it's being removed */
+
+/* Research interests section - positioned at bottom */
+.research-interests {
+  margin-top: auto; /* Push to bottom */
+  padding-top: 2rem;
 }
 
-.education-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.education-text {
-  flex: 1;
-}
-
-.education-degree {
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 0.25rem;
-}
-
-.education-institution {
-  color: #666666;
-  font-size: 0.95rem;
-}
-
-.updates {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  border-left: 4px solid $brand-color;
-}
-
-.updates h3 {
+.research-interests h2 {
   margin-bottom: 1rem;
-  color: #333333;
-  font-weight: 600;
 }
 
-.updates ul {
-  margin: 0;
-  padding: 0;
+.research-interests ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
 }
 
-.updates li {
-  margin-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  position: relative;
-  
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    width: 6px;
-    height: 6px;
-    background-color: $brand-color;
-    border-radius: 50%;
-  }
+.research-interests li {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
 }
 
-.updates strong {
-  color: $brand-color;
-  font-weight: 600;
-}
-
-.updates i {
-  color: #666666;
-  font-style: italic;
-} 
+/* Remove updates section styles as it's being removed */ 

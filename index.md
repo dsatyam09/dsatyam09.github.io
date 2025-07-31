@@ -14,18 +14,7 @@ I am always eager to explore how AI can be made more interpretable, adaptable, a
 
 You can find my full CV [here](/cv/) and further information on my projects.
 
-## Education
-
-<div class="education-item">
-  <div class="education-logo">
-    <span style="font-size: 20px; color: #007bff;">🎓</span>
-  </div>
-  <div class="education-text">
-    <div class="education-degree">Master of Science in Data Science, expected in 2026</div>
-    <div class="education-institution">Indiana University, Bloomington, USA</div>
-  </div>
-</div>
-
+<div class="research-interests">
 ## Research Interests
 
 - **3D Computer Vision and AI**
@@ -34,20 +23,4 @@ You can find my full CV [here](/cv/) and further information on my projects.
 - **Deep Learning for Graphics**
 - **Self-supervised Learning**
 - **Computer Vision Applications**
-
-## Updates
-
-<div class="updates">
-<ul>
-<li><strong>Aug 2025</strong> – <i>Joined MSDS program at Indiana University Bloomington</i></li>
-<li><strong>Jul 2024 – June 2025</strong> – <i>Research Assistant at Jio Institute, Navi Mumbai</i></li>
-<li><strong>Jul 2024</strong> – <i>Research paper on Facial Image Inpainting published in Journal of Electrical Systems</i></li>
-<li><strong>Jun 2024</strong> – <i>Research paper "Beyond Texture..." published in Intelligent Marine Technology and Systems</i></li>
-<li><strong>Mar 2024</strong> – <i>Winner, Hack-AI-Thon 2.0 (Elastic Search track)</i></li>
-<li><strong>Nov 2023 – Mar 2024</strong> – <i>Research Intern at KJ Somaiya College of Engineering, Mumbai</i></li>
-<li><strong>Dec 2023</strong> – <i>Finalist, Hackathon Cashflow – Top 4 @ IIT Bombay & Edelweiss Tokio Life</i></li>
-<li><strong>Jun – Aug 2023</strong> – <i>Summer Analyst at EY, Mumbai</i></li>
-<li><strong>Dec 2022</strong> – <i>Winner, Hackathon WeldRight @ IIT Bombay & Godrej Aerospace</i></li>
-<li><strong>Jun – Jul 2022</strong> – <i>Research Intern at Indian Statistical Institute, Kolkata</i></li>
-</ul>
 </div>

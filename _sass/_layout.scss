@@ -94,6 +94,19 @@
     border-radius: 10px;
 }
 
+/* Page titles - add more spacing from navbar */
+.page-content h1,
+.page-content h2 {
+    margin-top: 3rem; /* Increased spacing from navbar */
+}
+
+/* Make content span wider */
+.wrapper {
+    max-width: 1400px; /* Increased from default */
+    margin: 0 auto;
+    padding: 0 2rem; /* Increased padding */
+}
+
 /**
  * Updates Section (for dynamic content areas)
  */
