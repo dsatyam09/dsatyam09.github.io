@@ -5,7 +5,7 @@
 .about-container {
   display: flex;
   gap: 3rem;
-  margin-top: 2rem;
+  margin-top: 1.6rem; /* Reduced from 2rem to 1.6rem (0.8X) */
   height: calc(100vh - 120px); /* Make it fit in viewport */
   overflow: hidden; /* Prevent scrolling */
   
@@ -31,7 +31,7 @@
 }
 
 .profile-photo {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem; /* Reduced from 1.5rem to 1.2rem (0.8X) */
 }
 
 .circular-photo {
@@ -85,8 +85,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Increased from 40px */
-  height: 50px; /* Increased from 40px */
+  width: 30px; /* Reduced from 50px to 30px (0.6X) */
+  height: 30px; /* Reduced from 50px to 30px (0.6X) */
   color: $brand-color;
   text-decoration: none;
   border-radius: 50%;
@@ -100,8 +100,8 @@
 }
 
 .contact-icon-img {
-  width: 50px;
-  height: 50px;
+  width: 30px; /* Reduced from 50px to 30px (0.6X) */
+  height: 30px; /* Reduced from 50px to 30px (0.6X) */
   border-radius: 50%;
   object-fit: cover;
   transition: all 0.3s ease;
