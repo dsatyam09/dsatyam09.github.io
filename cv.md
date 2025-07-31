@@ -4,8 +4,6 @@ permalink: /cv/
 title: CV
 ---
 
-# CV
-
 <style>
   .cv-container {
     width: 100%;

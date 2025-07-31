@@ -185,17 +185,34 @@
 
 .research-interests h2 {
   margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333333;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .research-interests ul {
-  display: flex;
-  flex-direction: column; /* Changed from grid to column */
-  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .research-interests li {
-  font-size: 0.95rem;
-  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.4;
+  
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
 }
 
 /* Remove updates section styles as it's being removed */ 

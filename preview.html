@@ -52,7 +52,7 @@
             font-size: 85%;
             letter-spacing: 1px;
             line-height: 1em;
-            font-weight: 600;
+            font-weight: 700; /* Made bolder */
             margin: 0;
             padding: 0;
             list-style-type: none;
@@ -72,10 +72,12 @@
             display: block;
             color: #333333;
             text-decoration: none;
+            font-weight: 700; /* Made bolder */
         }
 
         .page-link.active {
             color: #0077CC;
+            font-weight: 800; /* Made even bolder for active state */
         }
 
         /* About Container */
@@ -239,17 +241,33 @@
 
         .research-interests h2 {
             margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333333;
         }
 
         .research-interests ul {
-            display: flex;
-            flex-direction: column; /* Changed from grid to column */
-            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         .research-interests li {
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .research-interests li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333333;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
         /* Responsive */
@@ -322,7 +340,7 @@
                 <div class="content-section">
                     <h1>Hi, I'm Satyam! 🙌</h1>
                     
-                    <p>I am a Master's student in Data Science at <a href="https://www.ri.cmu.edu/">Indiana University, Bloomington</a>. My research interests are at the interface of 3D Computer Vision and AI, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes.</p>
+                    <p>I am a Master's student in Data Science at <a href="https://www.ri.cmu.edu/">Indiana University, Bloomington</a>. My research interests are at the interface of 3D Computer Vision and Language Models, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes.</p>
                     
                     <p>Previously, I spent a year as a researcher at Jio Institute, collaborating with <a href="https://sites.google.com/view/a2idsia-at-xyx/sudipta-roy">Dr. Sudipta Roy</a> on self-supervised learning for ultrasound (USG) cyst localization. My inclination toward research developed during my undergraduate internships at Indian Statistical Institute, Kolkata, under the guidance of <a href="https://www.isical.ac.in/~pmaji/">Dr. Pradipta Maji</a>, and at KJSCE, where I worked with <a href="https://www.somaiya.edu/en/view-member/160111/">Dr. Jagannath Nirmal</a> on marine environmental monitoring using computer vision.</p>
                     

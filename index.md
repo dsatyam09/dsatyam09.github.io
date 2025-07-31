@@ -6,7 +6,7 @@ permalink: /
 
 # Hi, I'm Satyam! 🙌
 
-I am a Master's student in Data Science at [Indiana University, Bloomington](https://www.ri.cmu.edu/). My research interests are at the interface of 3D Computer Vision and AI, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes.
+I am a Master's student in Data Science at [Indiana University, Bloomington](https://www.ri.cmu.edu/). My research interests are at the interface of 3D Computer Vision and Language Models, with a focus on Neural Scene Representations and 3D Scene Understanding. I am especially excited about combining deep learning techniques with graphics pipeline for photorealistic rendering of general dynamic scenes.
 
 Previously, I spent a year as a researcher at Jio Institute, collaborating with [Dr. Sudipta Roy](https://sites.google.com/view/a2idsia-at-xyx/sudipta-roy) on self-supervised learning for ultrasound (USG) cyst localization. My inclination toward research developed during my undergraduate internships at Indian Statistical Institute, Kolkata, under the guidance of [Dr. Pradipta Maji](https://www.isical.ac.in/~pmaji/), and at KJSCE, where I worked with [Dr. Jagannath Nirmal](https://www.somaiya.edu/en/view-member/160111/) on marine environmental monitoring using computer vision.
 
