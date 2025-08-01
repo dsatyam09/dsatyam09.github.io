@@ -5,7 +5,7 @@
 .about-container {
   display: flex;
   gap: 3rem;
-  margin-top: 1.6rem; /* Reduced from 2rem to 1.6rem (0.8X) */
+  margin-top: 1.28rem; /* Reduced from 1.6rem to 1.28rem (0.8X) */
   height: calc(100vh - 120px); /* Make it fit in viewport */
   overflow: hidden; /* Prevent scrolling */
   
@@ -133,7 +133,7 @@
   font-size: 1rem; /* Reduced from 1.1rem */
   line-height: 1.6; /* Reduced from 1.7 */
   color: #333333;
-  margin-bottom: 1.2rem; /* Reduced from 1.5rem */
+  margin-bottom: 0.84rem; /* Reduced from 1.2rem to 0.84rem (0.7X) */
 }
 
 .content-section a {
@@ -174,8 +174,6 @@
     font-weight: bold;
   }
 }
-
-/* Remove education section styles as it's being removed */
 
 /* Research interests section - positioned at bottom */
 .research-interests {
