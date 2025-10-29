@@ -9,17 +9,18 @@ permalink: /cv/
 
 <style>
   .cv-container {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 16px;
   }
 
   .cv-frame {
-    width: 100vw; /* Full viewport width */
-    max-width: 100%;
-    height: 90vh; /* Almost full height */
+    width: 100%;
+    height: min(85vh, 1200px);
     border: none;
   }
 
@@ -35,11 +36,20 @@ permalink: /cv/
     text-decoration: underline;
   }
 
-  /* Override wrapper styles to allow full width */
+  /* Make sure the page wrapper doesn't constrain the iframe weirdly */
   .cv-container .wrapper {
     max-width: 100% !important;
-    width: 100vw;
-    padding: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1400px) {
+    .cv-container { max-width: 1400px; }
+  }
+
+  @media (max-width: 768px) {
+    .cv-frame { height: 70vh; }
   }
 </style>
 
@@ -49,5 +59,5 @@ permalink: /cv/
     src="{{ site.baseurl }}/cv/Satyam_Dubey_CV_MSDS.pdf">
   </iframe>
 
-  <p>If the PDF does not load, you can <a class="download-link" href="{{ site.baseurl }}/cv/Satyam_Dubey.pdf" target="_blank">download it here</a>.</p>
+  <p>If the PDF does not load, you can <a class="download-link" href="{{ site.baseurl }}/cv/Satyam_Dubey_CV_MSDS.pdf" target="_blank">download it here</a>.</p>
 </div>
