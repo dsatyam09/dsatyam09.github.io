@@ -18,22 +18,19 @@ permalink: /experience/
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 40px;
       transition: transform 0.2s ease-in-out;
-      gap: 24px;
-      flex-wrap: wrap;
   }
   .experience-container:hover {
       transform: scale(1.02);
   }
   .experience-container img {
-      width: clamp(80px, 8vw, 140px);
+      width: 120px;
       height: auto;
       border-radius: 10px;
-      margin-right: 0;
+      margin-right: 25px;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
   }
   .experience-text {
-      flex: 1 1 300px;
-      min-width: 260px;
+      flex: 1;
   }
   .experience-title {
       font-size: 24px;
@@ -60,30 +57,9 @@ permalink: /experience/
       line-height: 1.6;
       color: #444;
   }
-
-  @media (max-width: 768px) {
-    .experience-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
 </style>
 
 ## Research & Industry Experience
-
----
-
-### **cns**  
-<div class="experience-container">
-  <div class="experience-text">
-    <p class="experience-title">cns</p>
-    <p class="experience-subtitle">Role and details coming soon</p>
-    <p class="experience-duration">Dates TBA</p>
-    <ul class="experience-list">
-      <li>Placeholder bullet point to be updated.</li>
-    </ul>
-  </div>
-</div>
 
 ---
 
