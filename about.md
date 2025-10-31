@@ -12,7 +12,7 @@ I am a Master's student in Data Science at [University of California, San Diago]
 
 Previously, I spent a year as a researcher at Jio Institute, collaborating with [Dr. Sudipto Roy](https://sites.google.com/view/a2idsia-at-xyx/sudipta-roy) on self-supervised learning for ultrasound (USG) cyst localization. My inclination toward research developed during my undergraduate internships at Indian Statistical Institute, Kolkata, under the guidance of [Dr. Pradipta Maji](https://www.isical.ac.in/~pmaji/), and at KJ Somaiya College of Engineering, where I worked with [Dr. Jagannath Nirmal](https://www.somaiya.edu/en/view-member/160111/) on marine environmental monitoring using computer vision.
 
-I am always eager to explore how AI can be made more interpretable, adaptable, and socially responsible.
+I am always eager to explore how AI can be made more interpretable, adaptable, and socially responsible .
 
 <h2>Updates</h2>
 <div class="updates" style="height: 10em; overflow-y: scroll;">
