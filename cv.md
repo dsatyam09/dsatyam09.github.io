@@ -1,51 +1,55 @@
 ---
-title: "CV"
-layout: default
+layout: page
+permalink: /cv/
+title: CV
 ---
-
-# My CV
 
 <style>
   .cv-container {
-    width: 100vw;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cv-frame {
-    width: 100vw; /* Full viewport width */
-    max-width: 100%;
-    height: 90vh; /* Almost full height */
+    width: 100%;
+    height: 80vh;
     border: none;
+    margin-top: 2rem;
   }
-
-  .download-link {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #007bff;
+  
+  .cv-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .download-section {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .color-button {
+    display: inline-block;
+    background-color: #0077CC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
   }
-
-  .download-link:hover {
-    text-decoration: underline;
-  }
-
-  /* Override wrapper styles to allow full width */
-  .cv-container .wrapper {
-    max-width: 100% !important;
-    width: 100vw;
-    padding: 0;
+  
+  .color-button:hover {
+    background-color: #005a9e;
+    text-decoration: none;
+    color: white;
   }
 </style>
 
 <div class="cv-container">
   <iframe 
     class="cv-frame" 
-    src="{{ site.baseurl }}/cv/Satyam_Dubey_CV_MSDS.pdf">
+    src="/cv/Resume_SatyamDubey.pdf">
   </iframe>
+</div>
 
-  <p>If the PDF does not load, you can <a class="download-link" href="{{ site.baseurl }}/cv/Satyam_Dubey.pdf" target="_blank">download it here</a>.</p>
+<div class="download-section">
+  <p>If the PDF does not load, you can <a href="/cv/Resume_SatyamDubey.pdf" target="_blank" class="color-button">Download CV</a></p>
 </div>

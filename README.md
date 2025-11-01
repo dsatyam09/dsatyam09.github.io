@@ -1,20 +1,25 @@
+# Satyam Dubey's Portfolio
 
-# Academic Portfolio
-
-This is a personal academic portfolio built with [Jekyll](https://jekyllrb.com/). It showcases my academic work, projects, research, and more. The portfolio is fully customizable for anyone to use as a template for their own portfolio.
+Personal portfolio website built with Jekyll, showcasing my work in Data Science and AI research.
 
 ## Features
+- Responsive design
+- Contact form
+- Project showcase
+- Research publications
+- Professional experience
 
-- Clean and simple design
-- Easy to customize content (projects, research, blog, etc.)
-- Mobile-friendly design
-- Supports markdown for easy writing of blog posts and pages
+## Technologies Used
+- Jekyll
+- HTML/CSS
+- JavaScript
+- Formspree for contact form
 
 ## Requirements
 
-Before you can run the project locally, make sure you have the following installed:
+Before you can run the project locally, make sure you have the following installed :
 
-- **Ruby** (Version 3.x.x or higher)
+- **Ruby** (Version 3.x.x or higher)         
 - **RubyGems**
 - **Bundler** (Run `gem install bundler` to install it)
 - **Jekyll** (Can be installed through the Gemfile)

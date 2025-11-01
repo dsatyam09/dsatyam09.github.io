@@ -4,12 +4,11 @@ author: Satyam Dubey
 general_email: dsatyam5302@gmail.com
 academic_email: satyam.dubey@jioinstitute.edu.in
 
-description: > 
-  Welcome to my personal site! I am passionate about technology, research, and innovation. 
-  Here, you'll find my projects, blog posts, and academic work.
+description: >-
+  Data Science Researcher & AI Enthusiast
 
 baseurl: ""  # The subpath of your site, e.g., /blog/
-url: "https://dsatyam09.github.io"  # The base hostname & protocol for your site
+url: ""  # The base hostname & protocol for your site, e.g. http://example.com
 
 # Social media links
 twitter_username: dsatyam09
@@ -17,16 +16,28 @@ twitter_url: "https://twitter.com/dsatyam09"
 github_username: dsatyam09
 linkedin_username: dsatyam09  # Removed trailing slash for consistency
 
-# Feel free to add other links here; add the corresponding SVG icon in _layouts/footer.html
-
 # Build settings
 markdown: kramdown
-
-kramdown:
-  math_engine: mathjax
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Other options
-permalink: blog/:year/:month/:title
+permalink: /:title/  # Ensures pages use their filenames as permalinks
 
-# Theme (optional, remove if using custom styling)
-theme: minima
+# Default settings for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
