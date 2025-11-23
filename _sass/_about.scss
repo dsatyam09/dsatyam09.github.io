@@ -4,13 +4,18 @@
 
 .about-container {
   display: flex;
-  gap: clamp(1.5rem, 3vw, 3rem); /* Responsive gap */
-  margin-top: clamp(1rem, 2vh, 1.28rem); /* Responsive margin */
+  gap: 3rem;
+  margin-top: 1.28rem;
   min-height: calc(100vh - 120px);
-  overflow: visible; /* Allow scrolling for better UX */
+  overflow: visible;
+  
+  @media (min-width: 1600px) {
+    gap: 4rem;
+    margin-top: 2rem;
+  }
   
   @include media-query($on-laptop) {
-    gap: clamp(1rem, 2vw, 2rem);
+    gap: 2rem;
   }
   
   @include media-query(768px) {
@@ -21,13 +26,20 @@
 }
 
 .profile-section {
-  flex: 0 0 clamp(280px, 25vw, 350px); /* Responsive width */
+  flex: 0 0 350px;
   text-align: center;
-  padding-left: clamp(1rem, 2vw, 2rem); /* Responsive padding */
-  padding-top: clamp(1.5rem, 3vh, 3rem); /* Responsive padding */
+  padding-left: 2rem;
+  padding-top: 3rem;
+  
+  @media (min-width: 1600px) {
+    flex: 0 0 400px;
+    padding-left: 3rem;
+    padding-top: 4rem;
+  }
   
   @include media-query($on-laptop) {
-    flex: 0 0 clamp(250px, 30vw, 300px);
+    flex: 0 0 300px;
+    padding-left: 1.5rem;
   }
   
   @include media-query(768px) {
@@ -43,21 +55,31 @@
 }
 
 .circular-photo {
-  width: clamp(180px, 20vw, 250px); /* Responsive size */
-  height: clamp(180px, 20vw, 250px); /* Responsive size */
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #f0f0f0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   
+  @media (min-width: 1600px) {
+    width: 280px;
+    height: 280px;
+  }
+  
   @include media-query($on-laptop) {
-    width: clamp(150px, 18vw, 200px);
-    height: clamp(150px, 18vw, 200px);
+    width: 200px;
+    height: 200px;
   }
   
   @include media-query(768px) {
-    width: clamp(150px, 30vw, 200px);
-    height: clamp(150px, 30vw, 200px);
+    width: 180px;
+    height: 180px;
+  }
+  
+  @include media-query(600px) {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -66,11 +88,23 @@
 }
 
 .profile-name {
-  font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive font size */
+  font-size: 2rem;
   font-weight: 600;
   color: #333333;
   margin-bottom: 0.5rem;
   font-family: 'Titillium Web', sans-serif;
+  
+  @media (min-width: 1600px) {
+    font-size: 2.2rem;
+  }
+  
+  @media (max-width: 950px) {
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 }
 
 .profile-title {
@@ -132,11 +166,15 @@
 
 .content-section {
   flex: 1;
-  max-width: none; /* Remove max-width constraint */
-  padding-right: clamp(1rem, 2vw, 2rem); /* Responsive padding */
+  max-width: none;
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribute content vertically */
+  justify-content: space-between;
+  
+  @media (min-width: 1600px) {
+    padding-right: 3rem;
+  }
   
   @include media-query(768px) {
     padding-right: 0;
@@ -144,18 +182,47 @@
 }
 
 .content-section h1 {
-  font-size: clamp(1.8rem, 4vw, 2.2rem); /* Responsive font size */
+  font-size: 2.2rem;
   font-weight: 600;
   color: #333333;
-  margin-bottom: clamp(1rem, 2vh, 1.5rem); /* Responsive margin */
+  margin-bottom: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
+  
+  @media (min-width: 1600px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 950px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .content-section p {
-  font-size: clamp(0.9rem, 1.5vw, 1rem); /* Responsive font size */
+  font-size: 1rem;
   line-height: 1.6;
   color: #333333;
-  margin-bottom: clamp(0.7rem, 1.5vh, 0.84rem); /* Responsive margin */
+  margin-bottom: 0.84rem;
+  
+  @media (min-width: 1600px) {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 950px) {
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
 }
 
 .content-section a {
@@ -168,11 +235,26 @@
 }
 
 .content-section h2 {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem); /* Responsive font size */
+  font-size: 1.3rem;
   font-weight: 600;
   color: #333333;
-  margin: clamp(1rem, 2vh, 1.5rem) 0 clamp(0.7rem, 1.5vh, 1rem) 0; /* Responsive margins */
+  margin: 1.5rem 0 1rem 0;
   font-family: 'Titillium Web', sans-serif;
+  
+  @media (min-width: 1600px) {
+    font-size: 1.5rem;
+    margin: 2rem 0 1.2rem 0;
+  }
+  
+  @media (max-width: 950px) {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.8rem 0;
+  }
+  
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.7rem 0;
+  }
 }
 
 .content-section ul {

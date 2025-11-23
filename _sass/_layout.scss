@@ -85,7 +85,7 @@
 /* Left-aligned text content - now responsive */
 .page-text {
     flex: 1;
-    min-width: min(500px, 100%);
+    min-width: 500px;
     
     @include media-query($on-laptop) {
         min-width: 100%;
@@ -94,13 +94,17 @@
 
 /* Image sections - now responsive */
 .page-image img {
-    max-width: min(300px, 30vw);
+    max-width: 300px;
     width: 100%;
     height: auto;
     border-radius: 10px;
     
+    @media (min-width: 1600px) {
+        max-width: 350px;
+    }
+    
     @include media-query($on-laptop) {
-        max-width: min(250px, 40vw);
+        max-width: 250px;
     }
     
     @include media-query($on-palm) {
@@ -111,29 +115,49 @@
 /* Page titles - add more spacing from navbar - now responsive */
 .page-content h1,
 .page-content h2 {
-    margin-top: clamp(2rem, 5vh, 3rem); /* Fluid spacing */
-    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive font size */
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    
+    @media (min-width: 1600px) {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+    
+    @media (max-width: 950px) {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
 }
 
 /* Make content span wider with increased margins - now responsive */
 .wrapper {
-    max-width: min(1400px, 90vw); /* Responsive max-width */
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 clamp(1rem, 4vw, 3rem); /* Fluid padding that scales with viewport */
+    padding: 0 3rem;
+    
+    @media (min-width: 1600px) {
+        max-width: 1600px;
+        padding: 0 4rem;
+    }
+    
+    @media (min-width: 2000px) {
+        max-width: 1800px;
+        padding: 0 5rem;
+    }
     
     @include media-query($on-laptop) {
-        max-width: min(950px, 95vw);
-        padding: 0 clamp(1rem, 3vw, 2rem);
+        max-width: 95%;
+        padding: 0 2rem;
     }
     
     @include media-query($on-palm) {
         max-width: 100%;
         padding: 0 1rem;
-    }
-    
-    @include media-query-min($on-large) {
-        max-width: min(1600px, 85vw);
-        padding: 0 clamp(2rem, 5vw, 4rem);
     }
 }
 
@@ -168,12 +192,24 @@
 }
 
 h1 /* .post-title */ {
-    margin-top: clamp(0.5rem, 1vh, 10px);
+    margin-top: 10px;
     letter-spacing: -1px;
     line-height: 1;
     font-family: 'Titillium Web', sans-serif;
     color: $blue-color-dark;
-    font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive h1 size */
+    font-size: 2.5rem;
+    
+    @media (min-width: 1600px) {
+        font-size: 3rem;
+    }
+    
+    @media (max-width: 950px) {
+        font-size: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
+    }
 }
 
 .post-content {

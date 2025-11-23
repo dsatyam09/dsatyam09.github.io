@@ -1,14 +1,26 @@
 .site-nav .page-link {
-    margin: 0 clamp(0.5em, 1.5vw, 1em); /* Responsive margin */
+    margin: 0 1em;
 }
 
 .trigger {
-    margin-top: clamp(0.5em, 2vh, 1em); /* Responsive margin */
+    margin-top: 1em;
 }
 
 .trigger h1 {
-    margin-bottom: clamp(0.5em, 2vh, 1em); /* Responsive margin */
-    font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+@media (min-width: 1600px) {
+    .trigger h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .trigger h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Global responsive improvements */
@@ -40,4 +52,5 @@ pre {
 .content {
     max-width: 100%;
     overflow-x: hidden;
+} 
 } 
