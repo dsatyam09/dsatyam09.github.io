@@ -16,24 +16,28 @@ dl, dd, ol, ul, figure {
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
-    line-height: 1.5; /* Reduced from 1.5 to prevent excessive spacing on large screens */
+    line-height: 1.4; /* Reduced from 1.5 - more aggressive */
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     
     @media (min-width: 1400px) {
-        line-height: 1.4; /* Tighter line-height on large screens */
+        line-height: 1.3; /* Even tighter on large screens */
     }
     
     @media (min-width: 1600px) {
         font-size: 1.05em;
-        line-height: 1.4;
+        line-height: 1.3;
+    }
+    
+    @media (min-width: 2560px) {
+        line-height: 1.25; /* Very tight on huge screens */
     }
     
     @media (max-width: 600px) {
         font-size: 0.9em;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 }
 
@@ -41,7 +45,7 @@ body {
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Set `margin-bottom` to maintain vertical rhythm - REDUCED for large screens
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -50,18 +54,30 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-/* Reduce spacing on large screens to prevent huge vertical gaps */
+/* Aggressively reduce spacing on large screens to prevent huge vertical gaps */
 @media (min-width: 1400px) {
     p {
-        margin-bottom: 0.8rem !important;
+        margin-bottom: 0.4rem !important; /* Reduced from 0.8rem */
+        line-height: 1.3 !important;
     }
     
     section {
-        margin: 1.5rem 0 !important;
+        margin: 1rem 0 !important; /* Reduced from 1.5rem */
     }
     
     h1, h2, h3 {
-        margin-bottom: 0.8rem !important;
+        margin-bottom: 0.6rem !important; /* Reduced from 0.8rem */
+    }
+}
+
+@media (min-width: 2560px) {
+    p {
+        margin-bottom: 0.3rem !important;
+        line-height: 1.25 !important;
+    }
+    
+    h1, h2, h3 {
+        margin-bottom: 0.5rem !important;
     }
 }
 
