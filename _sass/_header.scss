@@ -11,18 +11,32 @@
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 3rem;
+    
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+    
+    @media (min-width: 1400px) {
+        max-width: 1400px;
+    }
     
     @media (min-width: 1600px) {
         max-width: 1600px;
         padding: 0 4rem;
     }
     
-    @media (min-width: 2000px) {
+    @media (min-width: 1920px) {
         max-width: 1800px;
         padding: 0 5rem;
+    }
+    
+    @media (min-width: 2560px) {
+        max-width: 2200px;
+        padding: 0 6rem;
     }
     
     @include media-query($on-laptop) {

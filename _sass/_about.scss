@@ -10,8 +10,16 @@
   overflow: visible;
   
   @media (min-width: 1600px) {
-    gap: 4rem;
+    gap: 5rem;
     margin-top: 2rem;
+  }
+  
+  @media (min-width: 1920px) {
+    gap: 6rem;
+  }
+  
+  @media (min-width: 2560px) {
+    gap: 8rem;
   }
   
   @include media-query($on-laptop) {
@@ -32,9 +40,19 @@
   padding-top: 3rem;
   
   @media (min-width: 1600px) {
-    flex: 0 0 400px;
+    flex: 0 0 450px;
     padding-left: 3rem;
     padding-top: 4rem;
+  }
+  
+  @media (min-width: 1920px) {
+    flex: 0 0 500px;
+    padding-left: 4rem;
+  }
+  
+  @media (min-width: 2560px) {
+    flex: 0 0 600px;
+    padding-left: 5rem;
   }
   
   @include media-query($on-laptop) {
@@ -63,8 +81,18 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   
   @media (min-width: 1600px) {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
+  }
+  
+  @media (min-width: 1920px) {
+    width: 360px;
+    height: 360px;
+  }
+  
+  @media (min-width: 2560px) {
+    width: 400px;
+    height: 400px;
   }
   
   @include media-query($on-laptop) {
