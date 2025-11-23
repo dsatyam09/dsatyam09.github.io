@@ -217,74 +217,74 @@
   font-size: 2.2rem;
   font-weight: 600;
   color: #333333;
-  margin-bottom: 0.5rem; /* Aggressively reduced */
+  margin-bottom: 2rem; /* Increased 4x from 0.5rem (0.5 * 4 = 2rem) */
   font-family: 'Titillium Web', sans-serif;
   
   @media (min-width: 1400px) {
-    margin-bottom: 0.4rem; /* Very tight on large screens */
+    margin-bottom: 1.6rem; /* 4x from 0.4rem */
   }
   
   @media (min-width: 1600px) {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem; /* 4x from 0.5rem */
   }
   
   @media (min-width: 1920px) {
-    margin-bottom: 0.4rem;
+    margin-bottom: 1.6rem; /* 4x from 0.4rem */
   }
   
   @media (min-width: 2560px) {
-    margin-bottom: 0.35rem; /* Extremely tight on huge screens */
+    margin-bottom: 1.4rem; /* 4x from 0.35rem */
   }
   
   @media (max-width: 950px) {
     font-size: 1.8rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 2.4rem; /* 4x from 0.6rem */
   }
   
   @media (max-width: 600px) {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem; /* 4x from 0.5rem */
   }
 }
 
 .content-section p {
   font-size: 1rem;
-  line-height: 1.35; /* Reduced from 1.5 - more aggressive reduction */
+  line-height: 1.5; /* Increased from 1.35 for better readability */
   color: #333333;
-  margin-bottom: 0.4rem; /* Reduced from 0.6rem - use px for more control */
+  margin-bottom: 1rem; /* Increased from 0.4rem for better paragraph separation */
   
   @media (min-width: 1400px) {
-    line-height: 1.3; /* Even tighter on large screens */
-    margin-bottom: 0.35rem; /* Use smaller px values */
+    line-height: 1.5;
+    margin-bottom: 1.2rem; /* Increased separation on large screens */
   }
   
   @media (min-width: 1600px) {
     font-size: 1.1rem;
-    line-height: 1.3;
-    margin-bottom: 0.35rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
   }
   
   @media (min-width: 1920px) {
-    line-height: 1.3;
-    margin-bottom: 0.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.3rem; /* More space on very large screens */
   }
   
   @media (min-width: 2560px) {
-    line-height: 1.25; /* Very tight on huge screens */
-    margin-bottom: 0.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.4rem; /* Even more space on huge screens */
   }
   
   @media (max-width: 950px) {
     font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 0.45rem;
+    line-height: 1.5;
+    margin-bottom: 0.9rem; /* Good separation on tablets */
   }
   
   @media (max-width: 600px) {
     font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 0.4rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem; /* Good separation on mobile */
   }
 }
 
