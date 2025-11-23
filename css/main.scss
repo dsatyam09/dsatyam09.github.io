@@ -22,14 +22,23 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 
-// Width of the content area
+// Width of the content area - now responsive
 $content-width:    950px;
+$content-width-large: 1400px;
 
 $on-palm:          600px;
 $on-laptop:        950px;
+$on-desktop:       1200px;
+$on-large:         1600px;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-min($device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }

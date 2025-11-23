@@ -1,11 +1,43 @@
 .site-nav .page-link {
-    margin: 0 1em;
+    margin: 0 clamp(0.5em, 1.5vw, 1em); /* Responsive margin */
 }
 
 .trigger {
-    margin-top: 1em;
+    margin-top: clamp(0.5em, 2vh, 1em); /* Responsive margin */
 }
 
 .trigger h1 {
-    margin-bottom: 1em;
+    margin-bottom: clamp(0.5em, 2vh, 1em); /* Responsive margin */
+    font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
+}
+
+/* Global responsive improvements */
+* {
+    box-sizing: border-box;
+}
+
+/* Ensure images are always responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive tables */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Responsive code blocks */
+pre {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Ensure containers don't overflow */
+.container,
+.content {
+    max-width: 100%;
+    overflow-x: hidden;
 } 

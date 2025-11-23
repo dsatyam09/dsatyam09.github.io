@@ -11,14 +11,29 @@
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: min(1400px, 90vw);
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 clamp(1rem, 4vw, 3rem);
+    
+    @include media-query($on-laptop) {
+        max-width: min(950px, 95vw);
+        padding: 0 clamp(1rem, 3vw, 2rem);
+    }
+    
+    @include media-query($on-palm) {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    @include media-query-min($on-large) {
+        max-width: min(1600px, 85vw);
+        padding: 0 clamp(2rem, 5vw, 4rem);
+    }
 }
 
 .site-title {
     float: left;
-    font-size: 26px;
+    font-size: clamp(20px, 2.5vw, 26px); /* Responsive font size */
     font-weight: 500;
     color: #333333;
     text-decoration: none;
@@ -38,10 +53,14 @@
     font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: clamp(12px, 1.5vw, 14px); /* Responsive font size */
     letter-spacing: 1px;
-    margin-left: 30px;
+    margin-left: clamp(15px, 2vw, 30px); /* Responsive spacing */
     transition: color 0.3s ease;
+    
+    @include media-query(900px) {
+        margin-left: clamp(10px, 1.5vw, 20px);
+    }
 }
 
 .site-nav .page-link:hover {
@@ -53,8 +72,15 @@
     font-weight: 800;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+/* Responsive breakpoints */
+@include media-query(900px) {
+    .site-nav .page-link {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+}
+
+@include media-query(768px) {
     .site-nav {
         display: none;
     }

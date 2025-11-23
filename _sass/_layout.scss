@@ -82,29 +82,59 @@
     justify-content: space-between;
 }
 
-/* Left-aligned text content */
+/* Left-aligned text content - now responsive */
 .page-text {
     flex: 1;
-    min-width: 500px;
+    min-width: min(500px, 100%);
+    
+    @include media-query($on-laptop) {
+        min-width: 100%;
+    }
 }
 
-/* Image sections */
+/* Image sections - now responsive */
 .page-image img {
-    max-width: 300px;
+    max-width: min(300px, 30vw);
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    
+    @include media-query($on-laptop) {
+        max-width: min(250px, 40vw);
+    }
+    
+    @include media-query($on-palm) {
+        max-width: 100%;
+    }
 }
 
-/* Page titles - add more spacing from navbar */
+/* Page titles - add more spacing from navbar - now responsive */
 .page-content h1,
 .page-content h2 {
-    margin-top: 3rem; /* Increased spacing from navbar */
+    margin-top: clamp(2rem, 5vh, 3rem); /* Fluid spacing */
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive font size */
 }
 
-/* Make content span wider with increased margins */
+/* Make content span wider with increased margins - now responsive */
 .wrapper {
-    max-width: 1400px; /* Increased from default */
+    max-width: min(1400px, 90vw); /* Responsive max-width */
     margin: 0 auto;
-    padding: 0 3rem; /* Increased from 2rem to 3rem (0.5X increase) */
+    padding: 0 clamp(1rem, 4vw, 3rem); /* Fluid padding that scales with viewport */
+    
+    @include media-query($on-laptop) {
+        max-width: min(950px, 95vw);
+        padding: 0 clamp(1rem, 3vw, 2rem);
+    }
+    
+    @include media-query($on-palm) {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    @include media-query-min($on-large) {
+        max-width: min(1600px, 85vw);
+        padding: 0 clamp(2rem, 5vw, 4rem);
+    }
 }
 
 /**
@@ -138,11 +168,12 @@
 }
 
 h1 /* .post-title */ {
-    margin-top: 10px;
+    margin-top: clamp(0.5rem, 1vh, 10px);
     letter-spacing: -1px;
     line-height: 1;
     font-family: 'Titillium Web', sans-serif;
     color: $blue-color-dark;
+    font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive h1 size */
 }
 
 .post-content {

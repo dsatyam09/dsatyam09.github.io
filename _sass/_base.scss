@@ -15,7 +15,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: clamp(0.9rem, 1.5vw, $base-font-size); /* Responsive base font size */
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
@@ -150,22 +150,32 @@ pre {
 
 
 /**
- * Wrapper
+ * Wrapper - now fully responsive
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: min(#{$content-width}, 90vw);
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: clamp(1rem, 3vw, #{$spacing-unit});
+    padding-left: clamp(1rem, 3vw, #{$spacing-unit});
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        max-width: min(#{$content-width}, 95vw);
+        padding-right: clamp(0.5rem, 2vw, #{$spacing-unit} / 2);
+        padding-left: clamp(0.5rem, 2vw, #{$spacing-unit} / 2);
+    }
+    
+    @include media-query($on-palm) {
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    
+    @include media-query-min($on-large) {
+        max-width: min(#{$content-width-large}, 85vw);
+        padding-right: clamp(2rem, 4vw, 3rem);
+        padding-left: clamp(2rem, 4vw, 3rem);
     }
 }
 
