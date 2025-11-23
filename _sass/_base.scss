@@ -16,18 +16,24 @@ dl, dd, ol, ul, figure {
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
-    line-height: $base-line-height;
+    line-height: 1.5; /* Reduced from 1.5 to prevent excessive spacing on large screens */
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     
+    @media (min-width: 1400px) {
+        line-height: 1.4; /* Tighter line-height on large screens */
+    }
+    
     @media (min-width: 1600px) {
         font-size: 1.05em;
+        line-height: 1.4;
     }
     
     @media (max-width: 600px) {
         font-size: 0.9em;
+        line-height: 1.5;
     }
 }
 
@@ -42,6 +48,21 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+/* Reduce spacing on large screens to prevent huge vertical gaps */
+@media (min-width: 1400px) {
+    p {
+        margin-bottom: 0.8rem !important;
+    }
+    
+    section {
+        margin: 1.5rem 0 !important;
+    }
+    
+    h1, h2, h3 {
+        margin-bottom: 0.8rem !important;
+    }
 }
 
 

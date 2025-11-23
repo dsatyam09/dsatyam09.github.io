@@ -213,16 +213,20 @@
   font-size: 2.2rem;
   font-weight: 600;
   color: #333333;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem; /* Reduced from 1rem */
   font-family: 'Titillium Web', sans-serif;
+  
+  @media (min-width: 1400px) {
+    margin-bottom: 0.7rem; /* Tighter on large screens */
+  }
   
   @media (min-width: 1600px) {
     font-size: 2.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
   }
   
   @media (min-width: 1920px) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
   
   @media (max-width: 950px) {
@@ -238,26 +242,34 @@
 
 .content-section p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5; /* Reduced from 1.6 to prevent large gaps on big monitors */
   color: #333333;
   margin-bottom: 0.6rem;
   
+  @media (min-width: 1400px) {
+    line-height: 1.4; /* Tighter on large screens */
+    margin-bottom: 0.5rem;
+  }
+  
   @media (min-width: 1600px) {
     font-size: 1.1rem;
-    margin-bottom: 0.7rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
   
   @media (min-width: 1920px) {
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.5rem;
   }
   
   @media (max-width: 950px) {
     font-size: 0.95rem;
+    line-height: 1.5;
     margin-bottom: 0.55rem;
   }
   
   @media (max-width: 600px) {
     font-size: 0.9rem;
+    line-height: 1.5;
     margin-bottom: 0.5rem;
   }
 }
@@ -275,16 +287,20 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: #333333;
-  margin: 1rem 0 0.7rem 0;
+  margin: 0.8rem 0 0.6rem 0; /* Reduced margins */
   font-family: 'Titillium Web', sans-serif;
+  
+  @media (min-width: 1400px) {
+    margin: 0.7rem 0 0.5rem 0; /* Tighter on large screens */
+  }
   
   @media (min-width: 1600px) {
     font-size: 1.5rem;
-    margin: 1.2rem 0 0.8rem 0;
+    margin: 0.8rem 0 0.6rem 0;
   }
   
   @media (min-width: 1920px) {
-    margin: 1rem 0 0.7rem 0;
+    margin: 0.7rem 0 0.5rem 0;
   }
   
   @media (max-width: 950px) {
@@ -301,14 +317,18 @@
 .content-section ul {
   list-style: none;
   padding: 0;
-  margin: 0.6rem 0;
+  margin: 0.5rem 0; /* Reduced from 0.6rem */
+  
+  @media (min-width: 1400px) {
+    margin: 0.4rem 0; /* Tighter on large screens */
+  }
   
   @media (min-width: 1600px) {
-    margin: 0.7rem 0;
+    margin: 0.5rem 0;
   }
   
   @media (min-width: 1920px) {
-    margin: 0.6rem 0;
+    margin: 0.4rem 0;
   }
   
   @media (max-width: 950px) {
@@ -335,14 +355,18 @@
 /* Research interests section - positioned at bottom */
 .research-interests {
   margin-top: auto; /* Push to bottom */
-  padding-top: 1.2rem;
+  padding-top: 1rem; /* Reduced from 1.2rem */
+  
+  @media (min-width: 1400px) {
+    padding-top: 0.8rem; /* Tighter on large screens */
+  }
   
   @media (min-width: 1600px) {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
   
   @media (min-width: 1920px) {
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
   }
   
   @media (max-width: 950px) {
