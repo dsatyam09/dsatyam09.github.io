@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Dubey - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        /* Header Styles */
+        .site-header {
+            background-color: #f8f9fa; /* Greyish color like bottom navbar */
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding: 15px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        .site-title {
+            float: left;
+            font-size: 26px;
+            font-weight: 500;
+            color: #333333;
+            text-decoration: none;
+            font-family: 'Titillium Web', sans-serif;
+            line-height: 1;
+        }
+
+        .site-nav {
+            float: right;
+            line-height: 1;
+        }
+
+        .site-nav .page-link {
+            display: inline-block;
+            color: #333333;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .site-nav .page-link:hover {
+            color: #0077CC;
+        }
+
+        .site-nav .page-link.active {
+            color: #0077CC;
+            font-weight: 800;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .site-nav {
+                display: none;
+            }
+            
+            .site-title {
+                float: none;
+                text-align: center;
+                display: block;
+            }
+        }
+
+        /* About Container */
+        .about-container {
+            display: flex;
+            gap: 3rem;
+            margin-top: 1.28rem; /* Reduced from 1.6rem to 1.28rem (0.8X) */
+            height: calc(100vh - 120px); /* Make it fit in viewport */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .profile-section {
+            flex: 0 0 350px;
+            text-align: center;
+            padding-left: 2rem; /* Move photo more to the left */
+            padding-top: 3rem; /* Move photo down a bit */
+        }
+
+        .profile-photo {
+            margin-bottom: 1.2rem; /* Reduced from 1.5rem to 1.2rem (0.8X) */
+        }
+
+        .circular-photo {
+            width: 250px; /* Increased from 200px */
+            height: 250px; /* Increased from 200px */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f0f0f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            color: #666666;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .profile-institution {
+            font-size: 1.1rem;
+            color: #0077CC;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem; /* Increased gap */
+            margin-top: 1rem;
+        }
+
+        .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px; /* Reduced from 50px to 30px (0.6X) */
+            height: 30px; /* Reduced from 50px to 30px (0.6X) */
+            color: #0077CC;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .contact-icon:hover {
+            background-color: #0077CC;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-icon-img {
+            width: 30px; /* Reduced from 50px to 30px (0.6X) */
+            height: 30px; /* Reduced from 50px to 30px (0.6X) */
+            border-radius: 50%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .contact-icon-img:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section {
+            flex: 1;
+            max-width: none; /* Remove max-width constraint */
+            padding-right: 2rem; /* Add right padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute content vertically */
+        }
+
+        .content-section h1 {
+            font-size: 2.2rem; /* Reduced from 2.5rem */
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section p {
+            font-size: 1rem; /* Reduced from 1.1rem */
+            line-height: 1.6; /* Reduced from 1.7 */
+            color: #333333;
+            margin-bottom: 0.84rem; /* Reduced from 1.2rem to 0.84rem (0.7X) */
+        }
+
+        .content-section a {
+            color: #0077CC;
+            text-decoration: none;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section h2 {
+            font-size: 1.3rem; /* Reduced from 1.5rem */
+            font-weight: 600;
+            color: #333333;
+            margin: 1.5rem 0 1rem 0; /* Reduced margins */
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .content-section li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.4rem; /* Reduced from 0.5rem */
+            font-size: 1rem; /* Reduced from 1.1rem */
+            color: #333333;
+        }
+
+        .content-section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        /* Research interests section - positioned at bottom */
+        .research-interests {
+            margin-top: auto; /* Push to bottom */
+            padding-top: 2rem;
+        }
+
+        .research-interests h2 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .research-interests ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .research-interests li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .research-interests li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333333;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                gap: 2rem;
+                height: auto;
+                overflow: visible;
+            }
+            
+            .profile-section {
+                flex: none;
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="/">Satyam Dubey</a>
+            <nav class="site-nav">
+                <a href="/" class="page-link active">About</a>
+                <a href="/experience/" class="page-link">Experience</a>
+                <a href="/research/" class="page-link">Research</a>
+                <a href="/projects/" class="page-link">Projects</a>
+                <a href="/blog/" class="page-link">Blog</a>
+                <a href="/cv/" class="page-link">CV</a>
+                <a href="/contact/" class="page-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="about-container">
+                <!-- Left Column: Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-photo">
+                        <img src="/images/Satyam.jpeg" alt="Satyam Dubey" class="circular-photo">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Satyam Dubey</h1>
+                        <p class="profile-title">Master's Student in Data Science</p>
+                        <p class="profile-institution">Indiana University, Bloomington</p>
+                        <div class="contact-icons">
+                            <a href="https://scholar.google.com/citations?user=evsnCukAAAAJ&hl=en&authuser=2" title="Google Scholar" class="contact-icon" target="_blank">
+                                <img src="/images/scholar.png" alt="Google Scholar" class="contact-icon-img">
+                            </a>
+                            <a href="mailto:dsatyam5302@gmail.com" title="Email" class="contact-icon">
+                                <img src="/images/gmail.jpg" alt="Email" class="contact-icon-img">
+                            </a>
+                            <a href="https://linkedin.com/in/dsatyam09" title="LinkedIn" class="contact-icon" target="_blank">
+                                <img src="/images/linkdin.png" alt="LinkedIn" class="contact-icon-img">
+                            </a>
+                            <a href="https://github.com/dsatyam09" title="GitHub" class="contact-icon" target="_blank">
+                                <img src="/images/github.jpg" alt="GitHub" class="contact-icon-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content Section -->
+                <div class="content-section">
+                    <h1>Hi, I'm Satyam! 🙌</h1>
+                    
+                    <p>I'm a Master's student in Data Science at <a href="https://luddy.indiana.edu/index.html">Indiana University, Bloomington</a>. My interests lie at the interface of 3D Computer Vision and Language Models, focusing on Neural Scene Representations and 3D Scene Understanding. I'm especially excited about combining deep learning with graphics pipelines for photorealistic rendering of general dynamic scenes.</p>
+                    
+                    <p>Previously, I spent a year as a researcher at Jio Institute, collaborating with <a href="https://sites.google.com/view/a2idsia-at-xyx/sudipta-roy">Dr. Sudipta Roy</a> on self-supervised learning for ultrasound (USG) cyst localization. My inclination toward research developed during my undergraduate internships at Indian Statistical Institute, Kolkata, under the guidance of <a href="https://www.isical.ac.in/~pmaji/">Dr. Pradipta Maji</a>, and at KJSCE, where I worked with <a href="https://www.somaiya.edu/en/view-member/160111/">Dr. Jagannath Nirmal</a> on marine environmental monitoring using computer vision.</p>
+                    
+                    <p>Outside of research, you'll find me on the soccer field or deep into a science fiction movies (strictly no drama, real life already covers that genre). I have a soft spot for bold ideas, messy prototypes, and those problems that sneak into your head at 2 a.m. and have you sketching equations on whatever paper's nearby.</p>
+                    
+                    <p>You can find my full CV <a href="/cv/">here</a> and further information on my projects.</p>
+
+                    <p><strong>Research Interests:</strong><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <strong>Vision Language Models</strong><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <strong>Diffusion Models</strong><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <strong>3D Scene Understanding</strong><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• <strong>Agentic AI</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

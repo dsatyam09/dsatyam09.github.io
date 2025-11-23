@@ -1,0 +1,216 @@
+/**
+ * About page styles
+ */
+
+.about-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1.28rem; /* Reduced from 1.6rem to 1.28rem (0.8X) */
+  height: calc(100vh - 120px); /* Make it fit in viewport */
+  overflow: hidden; /* Prevent scrolling */
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.profile-section {
+  flex: 0 0 350px;
+  text-align: center;
+  padding-left: 2rem; /* Move photo more to the left */
+  padding-top: 3rem; /* Move photo down a bit */
+  
+  @media (max-width: 768px) {
+    flex: none;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+.profile-photo {
+  margin-bottom: 1.2rem; /* Reduced from 1.5rem to 1.2rem (0.8X) */
+}
+
+.circular-photo {
+  width: 250px; /* Increased from 200px */
+  height: 250px; /* Increased from 200px */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.profile-institution {
+  font-size: 1.1rem;
+  color: $brand-color;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Increased gap */
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Reduced from 50px to 30px (0.6X) */
+  height: 30px; /* Reduced from 50px to 30px (0.6X) */
+  color: $brand-color;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $brand-color;
+    color: white;
+    transform: translateY(-2px);
+  }
+}
+
+.contact-icon-img {
+  width: 30px; /* Reduced from 50px to 30px (0.6X) */
+  height: 30px; /* Reduced from 50px to 30px (0.6X) */
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.content-section {
+  flex: 1;
+  max-width: none; /* Remove max-width constraint */
+  padding-right: 2rem; /* Add right padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content vertically */
+}
+
+.content-section h1 {
+  font-size: 2.2rem; /* Reduced from 2.5rem */
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content-section p {
+  font-size: 1rem; /* Reduced from 1.1rem */
+  line-height: 1.6; /* Reduced from 1.7 */
+  color: #333333;
+  margin-bottom: 0.84rem; /* Reduced from 1.2rem to 0.84rem (0.7X) */
+}
+
+.content-section a {
+  color: $brand-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.content-section h2 {
+  font-size: 1.3rem; /* Reduced from 1.5rem */
+  font-weight: 600;
+  color: #333333;
+  margin: 1.5rem 0 1rem 0; /* Reduced margins */
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.content-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.4rem; /* Reduced from 0.5rem */
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: #333333;
+  
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+    font-weight: bold;
+  }
+}
+
+/* Research interests section - positioned at bottom */
+.research-interests {
+  margin-top: auto; /* Push to bottom */
+  padding-top: 2rem;
+}
+
+.research-interests h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333333;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.research-interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.research-interests li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.4;
+  
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+/* Remove updates section styles as it's being removed */ 

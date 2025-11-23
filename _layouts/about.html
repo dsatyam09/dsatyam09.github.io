@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="about-container">
+          <!-- Left Column: Profile Section -->
+          <div class="profile-section">
+            <div class="profile-photo">
+              <img src="/images/Satyam.jpeg" alt="Satyam Dubey" class="circular-photo">
+            </div>
+            <div class="profile-info">
+              <h1 class="profile-name">Satyam Dubey</h1>
+              <p class="profile-title">Master's Student in Data Science</p>
+              <p class="profile-institution">Indiana University, Bloomington</p>
+              <div class="contact-icons">
+                <a href="https://scholar.google.com/citations?user=evsnCukAAAAJ&hl=en&authuser=2" title="Google Scholar" class="contact-icon" target="_blank">
+                  <img src="/images/scholar.png" alt="Google Scholar" class="contact-icon-img">
+                </a>
+                <a href="mailto:{{ site.general_email }}" title="Email" class="contact-icon">
+                  <img src="/images/gmail.jpg" alt="Email" class="contact-icon-img">
+                </a>
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" class="contact-icon" target="_blank">
+                  <img src="/images/linkdin.png" alt="LinkedIn" class="contact-icon-img">
+                </a>
+                <a href="https://github.com/{{ site.github_username }}" title="GitHub" class="contact-icon" target="_blank">
+                  <img src="/images/github.jpg" alt="GitHub" class="contact-icon-img">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Content Section -->
+          <div class="content-section">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+</html> 
