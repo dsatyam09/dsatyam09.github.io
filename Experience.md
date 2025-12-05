@@ -64,7 +64,7 @@ permalink: /experience/
 
 ### **Cyberinfrastructure for Network Science Center, Indiana University**  
 <div class="experience-container">
-  <img src="{{ site.baseurl }}/images/cns.png" alt="CNS Logo">
+  <img src="{{ site.baseurl }}/images/cns_org.png" alt="CNS Logo">
   <div class="experience-text">
     <p class="experience-title">Machine Learning Research Assistant</p>
     <p class="experience-subtitle">Mentor: Dr. Katy Börner</p>
