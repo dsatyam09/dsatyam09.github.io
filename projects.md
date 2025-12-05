@@ -8,6 +8,16 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 
 <ul>
 	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
+		<img src="/images/Novanewz.png" alt="NovaNewz" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
+		<div style="flex: 1;">
+			<b>NovaNewz</b><br>
+			<span>December 2025</span><br>
+			<span>Technologies: Cloudflare (Workers, Vectorize, D1, Workers AI), Next.js, TypeScript, Python</span><br>
+			Built a serverless AI news engine using Cloudflare's edge stack to deliver fast, context-aware summaries with a RAG pipeline powered by Vectorize retrieval and Llama 3 generation. Developed a scalable ingestion and indexing pipeline using Workers AI for embeddings and D1 for storage, enabling continuous updates and a smooth user search and reading experience.<br>
+			<a href="https://github.com/dsatyam09/NovaNewz" target="_blank"><div class="color-button">Code</div></a>
+		</div>
+	</li>
+	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
 		<img src="/images/Profile.png" alt="DocSpot" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
 		<div style="flex: 1;">
 			<b>DocSpot</b><br>

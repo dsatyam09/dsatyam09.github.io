@@ -62,13 +62,30 @@ permalink: /experience/
 
 ---
 
+### **Cyberinfrastructure for Network Science Center, Indiana University**  
+<div class="experience-container">
+  <img src="{{ site.baseurl }}/images/cns.png" alt="CNS Logo">
+  <div class="experience-text">
+    <p class="experience-title">Machine Learning Research Assistant</p>
+    <p class="experience-subtitle">Mentor: Dr. Katy Börner</p>
+    <p class="experience-duration">September 2025 - Present</p>
+    <ul class="experience-list">
+      <li>Developed a 3D biomedical image-segmentation pipeline for the NIH HuBMAP consortium using SAM and DeepCell-Types, producing high-resolution cellular representations for downstream tissue-level analysis.</li>
+      <li>Built automated data and model pipelines with MLflow and containerized them using Docker to ensure full reproducibility.</li>
+      <li>Improved PyTorch imaging workflows through quantization and GPU-optimized inference, increasing model stability and throughput for high-volume multi-omics biomedical data.</li>
+    </ul>
+  </div>
+</div>
+
+---
+
 ### **Jio Institute, Mumbai**  
 <div class="experience-container">
   <img src="{{ site.baseurl }}/images/Jio_Institue.png" alt="Jio Institute Logo">
   <div class="experience-text">
     <p class="experience-title">Data Scientist</p>
     <p class="experience-subtitle">Mentor: Dr. Sudipta Roy</p>
-    <p class="experience-duration">July 2024 - Present</p>
+    <p class="experience-duration">July 2024 - June 2025</p>
     <ul class="experience-list">
       <li>Created a self-supervised learning pipeline using spectral features and attention for USG representation learning.</li>
       <li>Achieved 5–7% improvement in diagnostic accuracy across multi-organ datasets by enhancing feature generalization.</li>
