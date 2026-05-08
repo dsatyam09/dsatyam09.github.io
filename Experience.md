@@ -62,13 +62,28 @@ permalink: /experience/
 
 ---
 
+### **University Information Technology Services (UITS), Indiana University**  
+<div class="experience-container">
+  <img src="{{ site.baseurl }}/images/uits.png" alt="UITS Logo">
+  <div class="experience-text">
+    <p class="experience-title">Machine Learning Intern</p>
+    <p class="experience-duration">March 2026 - Present</p>
+    <ul class="experience-list">
+      <li>Built AI-assisted recommendation layer for Parking Appeals using Azure OpenAI, Azure AI Search, and Document Intelligence to analyze policy, historical cases, and appeal evidence, supporting reviewers with consistent, explainable decision guidance.</li>
+      <li>Delivered Face-based identity verification capability using Azure AI Face and liveness detection models to validate document-to-person matching and prevent spoofing in secure onboarding and high-trust verification workflows.</li>
+    </ul>
+  </div>
+</div>
+
+---
+
 ### **Cyberinfrastructure for Network Science Center, Indiana University**  
 <div class="experience-container">
   <img src="{{ site.baseurl }}/images/cns_org.png" alt="CNS Logo">
   <div class="experience-text">
     <p class="experience-title">Machine Learning Research Assistant</p>
     <p class="experience-subtitle">Mentor: Dr. Katy Börner</p>
-    <p class="experience-duration">September 2025 - Present</p>
+    <p class="experience-duration">September 2025 - February 2026</p>
     <ul class="experience-list">
       <li>Developed a 3D biomedical image-segmentation pipeline for the NIH HuBMAP consortium using SAM and DeepCell-Types, producing high-resolution cellular representations for downstream tissue-level analysis.</li>
       <li>Built automated data and model pipelines with MLflow and containerized them using Docker to ensure full reproducibility.</li>
