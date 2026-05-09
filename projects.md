@@ -8,6 +8,46 @@ Here is a non-exhaustive list of my non-research projects. My research work can 
 
 <ul>
 	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
+		<img src="/images/eggplant.gif" alt="Failure Prediction for Generative Robot Policy" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
+		<div style="flex: 1;">
+			<b>Failure Prediction for Generative Robot Policy</b><br>
+			<span>Technologies: PyTorch, Transformers, GRU, TCN, Hydra, Weights & Biases, SLURM, Big Red 200 (HPC)</span><br>
+			Worked on mechanistic interpretability and runtime failure prediction for Vision-Language-Action (VLA) robotic policies by studying how successful executions evolve in latent feature space over time. Extended the SAFE (NeurIPS 2025) framework with GRU, Transformer, and TCN temporal models, building large-scale HPC evaluation pipelines on Indiana University's Big Red 200 cluster for zero-shot failure detection, trajectory analysis, and architecture ablation studies across robotic manipulation tasks.<br>
+			<a href="https://github.com/dsatyam09/Failure-Prediction-for-Generative-Robot-Policy" target="_blank"><div class="color-button">Code</div></a>
+		</div>
+	</li>
+	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
+		<img src="/images/neuramind.png" alt="NeuraMind" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
+		<div style="flex: 1;">
+			<b>NeuraMind</b><br>
+			<span>March 2026 (Claude Builder Club Hackathon @ IU – 1st Prize)</span><br>
+			<span>Technologies: Swift (macOS), Claude AI (MCP), SQLite, Core ML, Accessibility APIs, Screen Recording APIs</span><br>
+			Built a privacy-first macOS ambient memory system that captures and reconstructs work context using real-time activity signals and Claude AI. Enables focus tracking, context recovery, and AI-generated workflow summaries with a local-first architecture and optional semantic reasoning layer.<br>
+			<a href="https://github.com/dsatyam09/NeuraMind" target="_blank"><div class="color-button">Code</div></a>
+			<a href="https://www.youtube.com/watch?v=z3_eFS4P9w8" target="_blank"><div class="color-button">Demo</div></a>
+		</div>
+	</li>
+	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
+		<img src="/images/agenticaudit.png" alt="Agentic AI Compliance Monitoring System" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
+		<div style="flex: 1;">
+			<b>Agentic AI Compliance Monitoring System</b><br>
+			<span>Technologies: LangGraph, FastAPI, Qwen3 (local LLM), ChromaDB, SQLite, RAG (Sentence Transformers), Cross-Encoders, Jinja2, PyMuPDF</span><br>
+			Built an agentic compliance auditing system using multi-agent debate (Advocate, Challenger, Arbiter) to evaluate enterprise policies against GDPR, HIPAA, and NIST standards, generating audit-ready POA&M reports. Designed a full RAG pipeline with vector retrieval and cross-encoder reranking for clause-level compliance detection across 1K+ policy sections. Integrated adaptive regulation monitoring, semantic drift detection, and fully local LLM execution for zero-cost, fully auditable reasoning with end-to-end traceability.<br>
+			<a href="https://github.com/dsatyam09/Agentic_Audit" target="_blank"><div class="color-button">Code</div></a>
+			<a href="https://www.youtube.com/watch?v=RZcnRnm9KA4&feature=youtu.be" target="_blank"><div class="color-button">Demo</div></a>
+		</div>
+	</li>
+	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
+		<img src="/images/enigma.gif" alt="Dynamic Leaderboard Ranking" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
+		<div style="flex: 1;">
+			<b>Dynamic Leaderboard Ranking</b><br>
+			<span>Technologies: FastAPI, PostgreSQL, Redis, Docker, React (Vite), TypeScript, AWS EC2, Vercel</span><br>
+			Built a real-time scalable leaderboard system in 24 hours simulating chess-scale ranking workloads with high read/write concurrency. Designed a hybrid architecture using FastAPI + Postgres for durability, an in-memory skip list for O(log N) ranking and percentile computation, and Redis caching for low-latency reads. Applied system design principles like write-ahead logging, separation of read/write paths, async processing, and cache-aside strategy to ensure scalability, consistency, and performance under heavy load.<br>
+			<a href="https://github.com/dsatyam09/Enigma" target="_blank"><div class="color-button">Code</div></a>
+			<a href="https://www.youtube.com/watch?v=avmymBZX5AY" target="_blank"><div class="color-button">Demo</div></a>
+		</div>
+	</li>
+	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
 		<img src="/images/Novanewz.png" alt="NovaNewz" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
 		<div style="flex: 1;">
 			<b>NovaNewz</b><br>
