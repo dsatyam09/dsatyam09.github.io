@@ -4,9 +4,7 @@ permalink: /projects/
 title: Projects
 ---
 
-Here is a non-exhaustive list of my non-research projects. My research work can be found <a href="/research">here</a>. You can also check out my Github profile <a href="#">here</a> for a complete list of my projects.
-
-<ul>
+<ul class="project-list">
 	<li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
 		<img src="/images/eggplant.gif" alt="Failure Prediction for Generative Robot Policy" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
 		<div style="flex: 1;">

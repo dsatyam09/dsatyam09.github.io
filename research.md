@@ -5,7 +5,7 @@ title: Research
 ---
 
 <h2>Publications</h2>
-<ul>
+<ul class="project-list">
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
     <img src="/images/gradcam_comparison.png" alt="Research Paper 1" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
     <div style="flex: 1;">
@@ -39,7 +39,7 @@ title: Research
 </ul>
 
 <h2>Patents</h2>
-<ul>
+<ul class="project-list">
   <li style="display: flex; align-items: flex-start; margin-bottom: 2em; width: 100%;">
     <img src="/images/profile.jpg" alt="Patent" style="width: 180px; height: 180px; object-fit: cover; border-radius: 8px; margin-right: 2em;" />
     <div style="flex: 1;">

@@ -138,44 +138,65 @@
     }
 }
 
-/* Make content span wider with increased margins - now responsive */
+/* Fluid wrapper - single source of truth for content width */
 .wrapper {
-    max-width: 95%;
+    max-width: unquote("min(95%, 1600px)");
     width: 100%;
     margin: 0 auto;
-    padding: 0 3rem;
-    
-    @media (min-width: 1200px) {
-        max-width: 1200px;
-    }
-    
-    @media (min-width: 1400px) {
-        max-width: 1400px;
-    }
-    
-    @media (min-width: 1600px) {
-        max-width: 1600px;
-        padding: 0 4rem;
-    }
-    
+    padding: 0 unquote("clamp(1rem, 2.5vw, 4rem)");
+
     @media (min-width: 1920px) {
-        max-width: 1800px;
-        padding: 0 5rem;
+        max-width: unquote("min(92%, 1900px)");
     }
-    
+
     @media (min-width: 2560px) {
-        max-width: 2200px;
-        padding: 0 6rem;
+        max-width: unquote("min(88%, 2400px)");
     }
-    
-    @include media-query($on-laptop) {
-        max-width: 95%;
-        padding: 0 2rem;
+}
+
+/**
+ * Project / Research listing - responsive
+ */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.project-list li img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 2em;
+    flex-shrink: 0;
+}
+
+.project-list li > div {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .project-list li {
+        flex-direction: column !important;
+        align-items: flex-start !important;
     }
-    
-    @include media-query($on-palm) {
-        max-width: 100%;
-        padding: 0 1rem;
+    .project-list li img {
+        width: 100% !important;
+        max-width: 320px;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        margin-right: 0 !important;
+        margin-bottom: 1em !important;
     }
 }
 

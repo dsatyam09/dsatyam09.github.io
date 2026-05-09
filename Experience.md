@@ -17,7 +17,7 @@ permalink: /experience/
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 40px;
       transition: transform 0.2s ease-in-out;
-      width: 100%; /* Make it span full width */
+      width: 100%;
   }
   .experience-container:hover {
       transform: scale(1.02);
@@ -29,22 +29,24 @@ permalink: /experience/
       border-radius: 10px;
       margin-right: 25px;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
   }
   .experience-text {
       flex: 1;
+      min-width: 0;
   }
   .experience-title {
-      font-size: 24px;
+      font-size: clamp(18px, 1vw + 12px, 24px);
       font-weight: bold;
       color: #2c3e50;
   }
   .experience-subtitle {
-      font-size: 18px;
+      font-size: clamp(14px, 0.6vw + 11px, 18px);
       font-weight: 600;
       color: #555;
   }
   .experience-duration {
-      font-size: 16px;
+      font-size: clamp(13px, 0.5vw + 10px, 16px);
       font-style: italic;
       color: #888;
       margin-bottom: 8px;
@@ -54,9 +56,27 @@ permalink: /experience/
       padding-left: 20px;
   }
   .experience-list li {
-      font-size: 16px;
+      font-size: clamp(13px, 0.5vw + 10px, 16px);
       line-height: 1.6;
       color: #444;
+      word-wrap: break-word;
+  }
+  @media (max-width: 600px) {
+      .experience-container {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 16px;
+          margin-bottom: 28px;
+      }
+      .experience-container img {
+          width: 90px;
+          height: 90px;
+          margin-right: 0;
+          margin-bottom: 12px;
+      }
+      .experience-list {
+          padding-left: 18px;
+      }
   }
 </style>
 

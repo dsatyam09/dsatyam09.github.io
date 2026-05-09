@@ -1,6 +1,12 @@
 <header class="site-header">
-  <div class="wrapper">
+  <div class="wrapper site-header-wrapper">
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <nav class="site-nav">
       {% include nav.html %}
     </nav>

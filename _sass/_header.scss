@@ -3,77 +3,48 @@
  */
 
 .site-header {
-    background-color: #f8f9fa; /* Greyish color like bottom navbar */
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding: 15px 0;
-    border-bottom: 1px solid #e9ecef;
+    background-color: #dee2e6; /* Visibly grey navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 14px 0;
+    border-bottom: 1px solid #c9ced3;
+}
+
+.site-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .wrapper {
-    max-width: 95%;
+    max-width: unquote("min(95%, 1600px)");
     width: 100%;
     margin: 0 auto;
-    padding: 0 3rem;
-    
-    @media (min-width: 1200px) {
-        max-width: 1200px;
-    }
-    
-    @media (min-width: 1400px) {
-        max-width: 1400px;
-    }
-    
-    @media (min-width: 1600px) {
-        max-width: 1600px;
-        padding: 0 4rem;
-    }
-    
+    padding: 0 unquote("clamp(1rem, 2.5vw, 4rem)");
+
     @media (min-width: 1920px) {
-        max-width: 1800px;
-        padding: 0 5rem;
+        max-width: unquote("min(92%, 1900px)");
     }
-    
+
     @media (min-width: 2560px) {
-        max-width: 2200px;
-        padding: 0 6rem;
-    }
-    
-    @include media-query($on-laptop) {
-        max-width: 95%;
-        padding: 0 2rem;
-    }
-    
-    @include media-query($on-palm) {
-        max-width: 100%;
-        padding: 0 1rem;
+        max-width: unquote("min(88%, 2400px)");
     }
 }
 
 .site-title {
-    float: left;
-    font-size: 26px;
+    font-size: unquote("clamp(20px, 1.4vw + 12px, 28px)");
     font-weight: 500;
     color: #333333;
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
     line-height: 1;
-    
-    @media (min-width: 1600px) {
-        font-size: 28px;
-    }
-    
-    @media (max-width: 950px) {
-        font-size: 22px;
-    }
-    
-    @media (max-width: 600px) {
-        font-size: 20px;
-    }
 }
 
 .site-nav {
-    float: right;
     line-height: 1;
 }
 
@@ -84,25 +55,14 @@
     font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: unquote("clamp(12px, 0.5vw + 9px, 15px)");
     letter-spacing: 1px;
-    margin-left: 30px;
+    margin-left: unquote("clamp(15px, 2vw, 35px)");
     transition: color 0.3s ease;
-    
-    @media (min-width: 1600px) {
-        font-size: 15px;
-        margin-left: 35px;
-    }
-    
-    @include media-query(900px) {
-        font-size: 12px;
-        margin-left: 20px;
-    }
-    
-    @include media-query(768px) {
-        font-size: 12px;
-        margin-left: 15px;
-    }
+}
+
+.site-nav .page-link:first-child {
+    margin-left: 0;
 }
 
 .site-nav .page-link:hover {
@@ -114,25 +74,73 @@
     font-weight: 800;
 }
 
-/* Responsive breakpoints */
-@include media-query(900px) {
-    .site-nav .page-link {
-        font-size: 12px;
-        margin-left: 15px;
+/* Hamburger toggle - hidden by default on desktop */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    padding: 0;
+    background: transparent;
+    border: none;
+
+    span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #333;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
     }
 }
 
-@include media-query(768px) {
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: flex;
+    }
+
     .site-nav {
         display: none;
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 12px;
+        padding: 8px 0;
+        border-top: 1px solid #c9ced3;
     }
-    
-    .site-title {
-        float: none;
-        text-align: center;
+
+    .site-nav .page-link {
+        display: block;
+        margin: 0;
+        padding: 12px 8px;
+        font-size: 14px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .site-nav .page-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-toggle:checked ~ .site-nav {
         display: block;
     }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
 }
-
-
-
